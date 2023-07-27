@@ -48,35 +48,35 @@
         <nav>
             <!-- nav container -->
             <div class="max-w-screen-xl mx-auto">
-                <!-- nav content -->
-                <div class="navbar lg:bg-primary-bg my-5 lg:my-12 lg:py-12 lg:px-16 lg:rounded-full">
+
+                <!-- navbar for lg sereen -->
+                <div class="navbar hidden lg:flex bg-primary-bg my-12 py-12 px-16 rounded-full">
 
                     <!-- navbar start -->
                     <div class="navbar-start">
-                        <!-- horizontal manu for desktop view -->
-                        <div class="hidden lg:flex">
-                            <ul class="menu menu-horizontal px-1 text-lg font-medium text-white">
-                                <li><a>Home</a></li>
-                                <li><a>About Us</a></li>
-                                <li><a>Shop</a></li>
-                                <li><a>All Fruits</a></li>
-                            </ul>
-                        </div>
+
+                        <ul class="menu menu-horizontal px-1 text-lg font-medium text-white">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+
                     </div>
 
                     <!-- navbar center -->
                     <div class="navbar-center">
-                        <div class="pr-44 md:pr-0 lg:pr-0">
-                            <a class="flex items-center gap-4"><img class="w-8 lg:w-fit" src="./images/logo.png" alt="">
-                                <p class="text-xl lg:text-[40px] font-bold lg:text-white">Fruit Burst</p>
-                            </a>
-                        </div>
+
+                        <a class="flex items-center gap-4"><img class="w-fit" src="./images/logo.png" alt="">
+                            <p class="text-[40px] font-bold text-white">Fruit Burst</p>
+                        </a>
+
                     </div>
 
                     <!-- navbar end -->
                     <div class="navbar-end">
 
-                        <div class="form-control hidden lg:flex">
+                        <div class="form-control">
                             <div class="flex items-center">
                                 <input type="text" placeholder="Search here"
                                     class="outline-none py-5 pl-7 pr-24 rounded-l-full" />
@@ -90,9 +90,28 @@
                             </div>
                         </div>
 
-                        <!-- dropdown manu for mobile & tablet view -->
+                    </div>
+
+                </div>
+
+
+                <!-- navbar for mobail and tablet screen -->
+                <div class="navbar lg:hidden my-5">
+
+                    <!-- nav start -->
+                    <div class="navbar-start">
+
+                        <a class="flex items-center gap-4"><img class="w-8" src="./images/logo.png" alt="">
+                            <p class="text-xl font-bold">Fruit Burst</p>
+                        </a>
+
+                    </div>
+
+                    <!-- nav end -->
+                    <div class="navbar-end">
+
                         <div class="dropdown dropdown-end">
-                            <label class="btn btn-ghost swap swap-rotate lg:hidden">
+                            <label class="btn btn-ghost swap swap-rotate">
 
                                 <!-- this hidden checkbox controls the state -->
                                 <input type="checkbox" />
@@ -135,7 +154,9 @@
                                 </li>
                             </ul>
                         </div>
+
                     </div>
+
                 </div>
 
             </div>
